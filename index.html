@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics Dictionary </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00c6ff">
+</head>
+<body>
+  <header>
+    <h1>Economics Dictionary</h1>
+
+    <div class="filters">
+      <!-- SEARCH with history dropdown -->
+      <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search a term...">
+        <ul id="searchHistory" class="history-dropdown"></ul>
+      </div>
+
+      <!-- CATEGORY select (keep your options auto-filled by JS) -->
+      <select id="categoryFilter">
+        <option value="">All</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <!-- Word of the Day box -->
+    <section id="wotd" class="wotd"></section>
+
+    <!-- Terms will load here -->
+    <div id="termList"></div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
